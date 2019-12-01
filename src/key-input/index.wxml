@@ -1,0 +1,5 @@
+<view class="car-plate">
+  <view mark:index="{{index}}" class="car-plate-item {{index===currentIndex?'active':''}} " wx:for="{{innerPlate}}" wx:key="{{index}}" bind:tap="handleClickPlate">
+    {{item}}
+  </view>
+</view>

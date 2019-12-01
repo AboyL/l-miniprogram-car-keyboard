@@ -1,0 +1,107 @@
+/* 键盘主体部分 */
+.key-board-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .key-board-title {
+    border-top: 1px solid #CCCCCC;
+    background: #F6F6F6;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    color: #666666;
+    text-align: right;
+    padding-right: 15px;
+  }
+
+  .key-board {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(210, 213, 219, 0.9);
+  }
+
+  .key {
+    box-sizing: border-box;
+    height: 42px;
+    line-height: 42px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 5px;
+    margin-bottom: 9px;
+    text-align: center;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.35);
+  }
+
+  &.province-keyboard {
+    .key-board {
+      padding: 10px 8px;
+    }
+
+    .key {
+      width: 32px;
+      margin-right: 4px;
+    }
+
+    .key:nth-child(10n) {
+      margin-right: 0;
+    }
+
+    /* 处理空白符号 */
+    .key:nth-child(31) {
+      background: #dddfe4;
+      width: 45px;
+      margin-right: 5px;
+      font-size: 16px;
+    }
+
+    .key:last-child {
+      width: 50px;
+    }
+  }
+
+  &.letter-keyboard {
+
+    /* 处理数字英文键盘 */
+    .key-board {
+      padding: 10px 5px;
+    }
+
+    .key {
+      width: 31px;
+      margin-right: 6px;
+    }
+
+    .key:nth-child(10n) {
+      margin-right: 0;
+    }
+
+    .key:nth-child(31) {
+      background: #dddfe4;
+      width: 63px;
+      margin-left: 3px;
+      margin-right: 8px;
+      font-size: 14px;
+    }
+
+    .key.disabled-number:nth-child(-n+10) {
+      color: #CCCCCC;
+    }
+  }
+
+
+  /* 处理最后一位 */
+  .key:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 63px;
+    background: #aeb3bc;
+  }
+
+  .delete-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

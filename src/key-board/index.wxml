@@ -1,0 +1,11 @@
+<view class="key-board-wrapper {{currentKeyBoardName}}">
+  <view class="key-board-title" bind:tap="handleClose">关闭</view>
+  <view class="key-board">
+    <view class="key {{disabledNumber?'disabled-number':''}}" mark:key="{{item}}" wx:for="{{currentKeyBoard}}" wx:key="{{index}}" bind:tap="handleClickKey">
+      {{item}}
+    </view>
+    <view class="key" bind:tap="handleDelete">
+      <image class="delete-icon" src="./image/delete.png"></image>
+    </view>
+  </view>
+</view>

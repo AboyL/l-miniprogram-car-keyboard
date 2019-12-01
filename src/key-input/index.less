@@ -1,0 +1,49 @@
+@import '../style.less';
+
+.car-plate {
+  display: flex;
+  justify-content: center;
+  padding: 15px 15px 0;
+}
+
+.car-plate-item {
+  @line-height: 46px;
+  box-sizing: border-box;
+  width: @input-item-wraper;
+  height: @line-height;
+  line-height: @line-height;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #D8D8D8;
+  color: #333333;
+  margin-right: @item-margin;
+
+  &:nth-child(2) {
+    margin-right: @item-2-margin;
+  }
+
+  &:last-child {
+    position: relative;
+    margin-left: @item-last-margin;
+  }
+
+  &:last-child::before {
+    @line-height: 14px;
+
+    content: '新';
+    position: absolute;
+    top: -@line-height;
+    left: -1px;
+    width: @input-item-wraper;
+    height: @line-height;
+    line-height: @line-height;
+    font-size: 10px;
+    background: @new-energy-color;
+    color: white;
+    border-radius: 1px;
+  }
+}
+
+.active {
+  border-color: @input-active-color;
+}

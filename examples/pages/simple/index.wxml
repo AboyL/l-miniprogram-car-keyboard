@@ -1,0 +1,4 @@
+<view>
+  <navigator url="/pages/index/index">回到首页</navigator>
+  <l-car-keyboard bind:change="handleChange" />
+</view>

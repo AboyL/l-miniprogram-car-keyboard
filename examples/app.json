@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/simple/index"
+  ],
+  "usingComponents": {
+    "l-key-board": "/dist/key-board/index",
+    "l-key-input": "/dist/key-input/index",
+    "l-car-keyboard": "/dist/car-keyboard/index"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

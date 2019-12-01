@@ -1,11 +1,18 @@
 {
   "name": "l-miniprogram-car-keyboard",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "一个用于小程序开发的时候使用的车辆键盘界面",
   "main": "index.js",
-  "miniprogram": "src",
+  "miniprogram": "dist",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp --gulpfile build/build-dev.js",
+    "build": "gulp --gulpfile build/build-prod.js"
+  },
+  "directories": {
+    "example": "examples"
   },
   "repository": {
     "type": "git",
@@ -16,9 +23,24 @@
     "keyboard"
   ],
   "author": "aboyl",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/AboyL/l-miniprogram-car-keyboard/issues"
   },
-  "homepage": "https://github.com/AboyL/l-miniprogram-car-keyboard#readme"
+  "homepage": "https://github.com/AboyL/l-miniprogram-car-keyboard#readme",
+  "devDependencies": {
+    "child_process": "^1.0.2",
+    "eslint": "^5.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-less": "^4.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.8",
+    "less": "^2.7.3"
+  }
 }
