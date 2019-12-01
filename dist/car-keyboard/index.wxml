@@ -1,0 +1,5 @@
+<!-- index.wxml -->
+<view class="container">
+  <l-key-input plate="{{plate}}" currentIndex="{{currentIndex}}" bind:indexChange="handleIndexChange" />
+  <l-carkeyboard wx:if="{{showKeyboard}}" id="keyboard" bind:choose="handlePlateChoose" bind:close="handleClose" bind:delete="handlePlateDelete" disabledNumber="{{disabledNumber}}" />
+</view>

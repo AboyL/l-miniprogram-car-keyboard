@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "l-carkeyboard": "../key-board/index",
+    "l-key-input": "../key-input/index"
+  },
+  "component": true
+}
