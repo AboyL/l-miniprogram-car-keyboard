@@ -1,6 +1,4 @@
-// components/base/car-keyboard/index.js
-
-const PlateCount = 8;
+const PlateCount = require('../config').PlateCount
 Component({
   /**
    * 组件的属性列表

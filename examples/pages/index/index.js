@@ -1,6 +1,7 @@
+const PlateCount = require('../../dist/config').PlateCount
 Page({
   data: {
-    plate: '',
+    plate: Array(PlateCount).fill(' ').join(''),
     currentIndex: 0,
     disabledNumber: true,
     showKeyboard: true,
