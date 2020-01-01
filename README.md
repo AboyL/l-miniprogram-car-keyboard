@@ -22,7 +22,7 @@
 一个简单的input输入框
 如果你只需要使用input组件可以使用这个
 
-![input](http://aboyl.org/2020-01-01-150227.png)
+<img src="http://aboyl.org/2020-01-01-150227.png">
 
 ### Attributes
 | 参数      | 说明          | 类型      | 可选值                           | 默认值  |
@@ -41,7 +41,7 @@
 简单的键盘组件
 如果你只需要使用键盘组件组件可以使用这个
 
-![key-board](http://aboyl.org/2020-01-01-151157.png)
+<img src="http://aboyl.org/2020-01-01-151157.png">
 
 ### Attributes
 | 参数      | 说明          | 类型      | 可选值                           | 默认值  |
@@ -74,5 +74,5 @@
 
 
 
-# 脚手架参考 七月老师出品的 [lin-ui](https://github.com/TaleLin/lin-ui)
+#### 脚手架参考 七月老师出品的 [lin-ui](https://github.com/TaleLin/lin-ui)
 
